@@ -118,7 +118,7 @@ func _sync(delta):
 	if is_network_master():
 		var flip_horizontal = false
 
-		if c_controller.r_mouse_position.x < global_position.x:
+		if c_controller.r_mouse_position_relative.x < 0:
 			flip_horizontal = true
 
 		if r_flip_horizontal != flip_horizontal:
